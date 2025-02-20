@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet" />
+  <title>Elecetric Vehicles - Ashma Motors</title>
+  <!-- FAV ICONS  -->
+  <link rel="icon" sizes="180x180" href="https://ashmamotors.com/icon/favicon4.png" type="image/png" />
+  <!-- CSS  -->
+  <link rel="stylesheet" href="./style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- GOOGLE FONTS  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif+Todhri&family=Open+Sans:wght@300..800&family=Roboto:ital,wdth,wght@0,75,100..900;1,75,100..900&display=swap"
+    rel="stylesheet" />
+  <!-- AWSOME ICONS  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+  <!-- AOS  -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <!-- SWIPER  -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body class="">
+  <!-- BANNER  ---------------------------------------------->
+  <div class="banner">
+    <div class="left-section"></div>
+    <div class="center-section">
+      <img src="https://ashmamotors.com/images/redd.jpg" alt="" class="banner-img" />
+    </div>
+  </div>
+  <!-- HEADER START ---------------------------------------------->
+  <header class="sticky-top">
+    <nav class="navbar">
+      <!-- LOGO  -->
+      <div>
+        <a class="navbar-brand" href="/index.html">
+          <img src="https://ashmamotors.com/images/footer-logo.png" alt="logo" class="logo-img" />
+        </a>
+      </div>
+      <!-- MENU BAR  -->
+      <div class="menuBar-icons" onclick="toggleBtn()"><i class="fa-solid fa-bars"></i></div>
+      <!-- MENU  -->
+      <div class="menuList" id="navMenu">
+        <ul class="menubar open-sans-custom merriweather-bold">
+          <li class="menu-items">
+            <a href="" class="menu-link"> home </a>
+          </li>
+          <li class="menu-items" id="">
+            <a class="menu-link" href="" id="company"> company </a>
+            <ul class="submenu-items" id="company-items">
+              <li>
+                <a href="" class="submenu-link">discover us</a>
+              </li>
+              <li>
+                <a href="" class="submenu-link">certificate</a>
+              </li>
+              <li>
+                <a href="" class="submenu-link">visit us</a>
+              </li>
+            </ul>
+          </li>
+          <li class="menu-items" id="">
+            <a class="menu-link" href="" id="company"> our products </a>
+            <ul class="submenu-items" id="company-items">
+              <li>
+                <a href="" class="submenu-link">discover us</a>
+              </li>
+              <li>
+                <a href="" class="submenu-link">certificate</a>
+              </li>
+              <li>
+                <a href="" class="submenu-link">visit us</a>
+              </li>
+            </ul>
+          </li>
+          <li class="menu-items">
+            <a class="menu-link" href=""> apply dealership </a>
+          </li>
+          <li class="menu-items">
+            <a class="menu-link" href=""> career </a>
+          </li>
+          <li class="menu-items">
+            <a class="menu-link" href=""> service complaint </a>
+          </li>
+          <li class="menu-items">
+            <a class="menu-link" href=""> contact </a>
+          </li>
+        </ul>
+
+        <!-- ICONS  -->
+        <div class="social-iocns">
+          <a href="" class="social-link">
+            <i class="fa-brands fa-facebook"></i>
+          </a>
+          <a href="" class="social-link">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="" class="social-link">
+            <i class="fa-brands fa-twitter"></i>
+          </a>
+          <a href="" class="social-link">
+            <i class="fa-brands fa-whatsapp"></i>
+          </a>
+        </div>
+      </div>
+      <!-- RESPONSIVE  -->
+      <div class="menuList" id="navMenu-responsive">
+        <ul class="menubar open-sans-custom">
+          <li class="menu-items">
+            <a href="" class="menu-link"> home </a>
+          </li>
+          <li class="menu-items" id="">
+            <button class="menu-link" onclick="subMenu()">
+              <span> company</span>
+              <i class="fa-solid fa-angle-down" id="downIcons"></i>
+              <i class="fa-solid fa-angle-up" id="upIcons"></i>
+            </button>
+            <ul class="resSubmenu" id="reSubMenuList">
+              <li>
+                <a href="" class="">discover us</a>
+              </li>
+              <li>
+                <a href="" class="">certificate</a>
+              </li>
+              <li>
+                <a href="" class="">visit us</a>
+              </li>
+            </ul>
+          </li>
+          <li class="menu-items" id="">
+            <button class="menu-link" onclick="subMenu2()">
+              <span> our product</span>
+              <i class="fa-solid fa-angle-down" id="downIcons1"></i>
+              <i class="fa-solid fa-angle-up" id="upIcons2"></i>
+            </button>
+            <ul class="resSubmenu" id="reSubMenuList2">
+              <li>
+                <a href="" class="">discover us</a>
+              </li>
+              <li>
+                <a href="" class="">certificate</a>
+              </li>
+              <li>
+                <a href="" class="">visit us</a>
+              </li>
+            </ul>
+          </li>
+          <li class="menu-items">
+            <a class="menu-link" href=""> apply dealership </a>
+          </li>
+          <li class="menu-items">
+            <a class="menu-link" href=""> career </a>
+          </li>
+          <li class="menu-items">
+            <a class="menu-link" href=""> service complaint </a>
+          </li>
+          <li class="menu-items">
+            <a class="menu-link" href=""> contact </a>
+          </li>
+        </ul>
+
+        <!-- ICONS  -->
+        <div class="social-iocns">
+          <a href="" class="social-link">
+            <i class="fa-brands fa-facebook"></i>
+          </a>
+          <a href="" class="social-link">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="" class="social-link">
+            <i class="fa-brands fa-twitter"></i>
+          </a>
+          <a href="" class="social-link">
+            <i class="fa-brands fa-whatsapp"></i>
+          </a>
+        </div>
+      </div>
+    </nav>
+    <!-- BORDER  -->
+    <div class="border-text"></div>
+  </header>
+  <!-- HEADER END  ---------------------------------------------->
+  <section>
+    <!-- CAROUSEL --------------------------------------------- -->
+    <div class="w3-content w3-section">
+      <img class="mySlides w3-animate-fading" src="images/slider_3.jpeg" style="width:100%">
+      <img class="mySlides w3-animate-fading" src="images/slider_1.jpg" style="width:100%">
+      <img class="mySlides w3-animate-fading" src="images/slider_2.jpeg" style="width:100%">
+      <img class="mySlides w3-animate-fading" src="images/slider_4.jpeg" style="width:100%">
+      <img class="mySlides w3-animate-fading" src="images/slider_5.jpeg" style="width:100%">
+    </div>
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span>
+      <span class="dot" onclick="currentSlide(5)"></span>
+      <span class="dot" onclick="currentSlide(6)"></span>
+    </div>
+    <!-- BUTTON  ----------------------------------------------->
+    <div class="body-btn1">
+      <button class="btn-link">
+        <a href="">get in touch</a>
+      </button>
+      <button class="btn-link">
+        <a href="">NEW DEALERSHIP ENQUIRY</a>
+      </button>
+    </div>
+    <!-- ABOUT SECTION  ----------------------------------------------->
+    <div class="abt-section container" data-aos="zoom-in-up">
+      <div class="title-section">
+        <h6 class="abt-tittle-h6">IT'S MORE THAN MOBILITY</h6>
+        <h1 class="abt-h1 merriweather-bold-italic-style">
+          <a href="">
+            ABOUT
+            <span class="abt-h1-span">ASHMA MOTORS</span>
+          </a>
+        </h1>
+        <p class="abt-title-para merriweather-light">
+          Ashma Motors is working towards better transportation that is
+          transformational and sustainable. We are using leading edge
+          innovation to provide last mile connectivity that is smooth,
+          convenient, and affordable. The green technological changes with
+          Ashma Motors are enriching to make leap and bound to the future.
+          Going ahead we will create new cutting-edge technologies and
+          innovations to create last-mile connectivity in both passenger
+          vehicles and deliveries, which will create an affordable convenient
+          and smooth transportation often of man & material.
+        </p>
+      </div>
+      <!-- VERHICLE INFO  -->
+      <div class="verhicle-info" data-aos="zoom-in-up">
+        <div>
+          <img src="./Images/about_2.jpeg" alt="verhicle-logo" />
+        </div>
+
+        <div class="vehicle-info-title">
+          <h4 class="merriweather-bold-italic">Wide range of e-Rickshaw & Loaders</h4>
+          <p class="merriweather-light">
+            The joy ride is for everyone, for every age and for every segment.
+            With key innovations in electric vehicle category Ashma Motors
+            have created benchmark products that provide consumers a viable,
+            convenient and cost effective way to travel.
+          </p>
+          <div class="vehicle-info-count">
+            <span class="vehicle-info-count-info">
+              <h3>100+</h3>
+              <span>dealers</span>
+            </span>
+            <span class="vehicle-info-count-info">
+              <h3>40+</h3>
+              <span>cities</span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- OUR PRODUCT---------------------------------------------  -->
+    <div class="our-product" data-aos="zoom-in-up">
+      <!-- TITTLE  -->
+      <div class="our-product-tittle container">
+        <h3 class="merriweather-bold-italic-our-product">Our Product Range</h3>
+        <p class="merriweather-light">
+          Discover our diverse range of products which have been created by
+          using the Advance technology as a base for all for different
+          business usage.
+        </p>
+      </div>
+      <!-- SLIDER  -->
+      <!-- <div>
+        <div class="slider-container" item-display-d="4" item-display-t="2" item-display-m="1">
+          <div class="slider-width">
+            <div class="item card" style="width: 10rem">
+              <img src="https://ashmamotors.com/proslider/narainiceslider.jpg" alt="1st-img" />
+            </div>
+            <div class="item card" style="width: 10rem">
+              <img src="https://ashmamotors.com/proslider/cplusslider2.jpg" alt="1st-img" />
+            </div>
+            <div class="item card" style="width: 10rem">
+              <img src="https://ashmamotors.com/proslider/narainplusslider2.jpg" alt="1st-img" />
+            </div>
+            <div class="item card" style="width: 10rem">
+              <img src="https://ashmamotors.com/products/door_loader.jpg" alt="1st-img" />
+            </div>
+            <div class="item card" style="width: 10rem">
+              <img src="https://ashmamotors.com/proslider/narainbase.jpg" alt="1st-img" />
+            </div>
+          </div>
+          <div class="slider-container-btn">
+            <button type="button" class="btn" onclick="prev()">Prev</button>
+            <button type="button" class="btn" onclick="next()">Next</button>
+          </div>
+        </div>
+      </div> -->
+
+      <swiper-container class="mySwiper" init="false">
+        <swiper-slide>
+          <img src="./Images/details_ashma_a1.png" alt="1st-img" />
+          <h3 class="merriweather-bold-italic">ASHMA &nbsp; A1</h3>
+        </swiper-slide>
+        <swiper-slide>
+          <img src="./Images/details_ashma_n1.png" alt="1st-img" />
+          <h3 class="merriweather-bold-italic">ASHMA &nbsp; A1</h3>
+        </swiper-slide>
+        <swiper-slide>
+          <img src="./Images/details_ashma_super.png" alt="1st-img" />
+          <h3 class="merriweather-bold-italic">ASHMA &nbsp; A1</h3>
+        </swiper-slide>
+        <swiper-slide>
+          <img src="./Images/details_ashma_super.png" alt="1st-img" />
+          <h3 class="merriweather-bold-italic">ASHMA &nbsp; A1</h3>
+        </swiper-slide>
+        <swiper-slide>
+          <img src="./Images/details_ashma_super.png" alt="1st-img" />
+          <h3 class="merriweather-bold-italic">ASHMA &nbsp; A1</h3>
+        </swiper-slide>
+        <swiper-slide>
+          <img src="./Images/details_ashma_super.png" alt="1st-img" />
+          <h3 class="merriweather-bold-italic">ASHMA &nbsp; A1</h3>
+        </swiper-slide>
+        <swiper-slide>
+          <img src="./Images/details_ashma_super.png" alt="1st-img" />
+          <h3 class="merriweather-bold-italic">ASHMA &nbsp; A1</h3>
+        </swiper-slide>
+      </swiper-container>
+
+      <!-- 2ND TITTLE -->
+      <div class="our-product-2nd-title">
+        <div class="our-product-2nd-title-div">
+          <h5 class="merriweather-bold-italic">We choose Ashma Motors</h5>
+          <h2 class="merriweather-bold-italic-our-product">Roadmap to Evolved Electricity</h2>
+          <h6 class="merriweather-bold-italic">FASTER, SMARTER & EFFICIENT ELECTRIC</h6>
+        </div>
+        <!-- CARD  -->
+        <div class="main-card-section">
+          <div class="card-section">
+            <div>
+              <i class="fa-solid fa-thumbs-up"></i>
+            </div>
+            <div class="card-section-title">
+              <h4>TO PROVIDE</h4>
+              <h2 class="merriweather-bold">Efficient, Reliable, Clean</h2>
+              <p class="noto-serif-todhri-regular">Transportation Solutions for Both Urban and Rural Areas.</p>
+            </div>
+          </div>
+          <div class="card-section">
+            <div>
+              <i class="fa-solid fa-thumbs-up"></i>
+            </div>
+            <div class="card-section-title">
+              <h4>TRUSTED BY MILLIONS</h4>
+              <h2 class="merriweather-bold">The Most Trusted and Rapidly Growing</h2>
+              <p class="noto-serif-todhri-regular">Vehicle Solutions Provide</p>
+            </div>
+          </div>
+          <div class="card-section">
+            <div>
+              <i class="fa-solid fa-thumbs-up"></i>
+            </div>
+            <div class="card-section-title">
+              <h4>OFFERING</h4>
+              <h2 class="merriweather-bold">Pollution-Free, Noise-Free</h2>
+              <p class="noto-serif-todhri-regular">Eand Economically Affordable Transportation Solutions.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- DETAILS OF VEHICLES --------------------------------------------- -->
+    <div class="container main-vehicles-info">
+      <!-- 1ST SECTION  -->
+      <div class="container vehicles-container vehicles-container_1" data-aos="zoom-in-right">
+        <!-- VEHICLES TITLE  -->
+        <div>
+          <div class="vehicles-tittle">
+            <div>
+              <h1 class="merriweather-bold-italic-vehicles">Introducing the all new exciting "ASHMA A1"</h1>
+              <h6>Eco-friendly rides for a sustainable future.</h6>
+            </div>
+            <p class="noto-serif-todhri-regular-vehiclesr">
+              Gear up to experience the electric auto rickshaw packed with
+              industry-first features & advanced technology
+            </p>
+          </div>
+          <button type="button" class="btn-link">
+            <a href=""> know more </a>
+          </button>
+        </div>
+        <!-- VEHICLES IMG  -->
+        <div class="vehicle-img">
+          <img src="./Images/details_ashma_a1.png" alt="vehicles" />
+        </div>
+      </div>
+      <!-- 2ND SECTION  -->
+      <div class="container vehicles-container vehicles-container_2" data-aos="zoom-in-left">
+        <!-- VEHICLES IMG  -->
+        <div class="vehicle-img">
+          <img src="./Images/details_ashma_super.png" alt="vehicles" />
+        </div>
+        <!-- VEHICLES TITLE  -->
+        <div>
+          <div class="vehicles-tittle">
+            <div>
+              <h1 class="merriweather-bold-italic-vehicles">BEST-IN PERFORMANCE IN "ASHMA SUPER""</h1>
+              <h6>Loaded with modern features</h6>
+            </div>
+            <p class="noto-serif-todhri-regular-vehiclesr">
+              Loaded with modern features, your travel companion "ASHMA SUPER" represent a significant step towards
+              sustainability. Make your journey more comfortable from hustle and bustle of city traffic.
+            </p>
+          </div>
+          <button type="button" class="btn-link">
+            <a href=""> know more </a>
+          </button>
+        </div>
+      </div>
+      <!-- 3RD SECTION  -->
+      <div class="container vehicles-container vehicles-container_3" data-aos="zoom-in-right">
+        <!-- VEHICLES TITLE  -->
+        <div>
+          <div class="vehicles-tittle">
+            <div>
+              <h1 class="merriweather-bold-italic-vehicles">
+                THE NEW "ASHMA N1"</h1>
+              <h6>Powering Your Journey with Clean Energy</h6>
+            </div>
+            <p class="noto-serif-todhri-regular-vehiclesr">
+              Comfortable ride, comfortable seat, Comfortable leg space will make your journey more comfortable.
+            </p>
+          </div>
+          <button type="button" class="btn-link">
+            <a href=""> know more </a>
+          </button>
+        </div>
+        <!-- VEHICLES IMG  -->
+        <div class="vehicle-img">
+          <img src="./Images/details_ashma_n1.png" alt="vehicles" />
+        </div>
+      </div>
+    </div>
+    <!-- ASHMA MOTORS IMG ----------------------------------------------------- -->
+    <div class="ashma-img" data-aos="zoom-in-up">
+      <div class="ashma-img-title">
+        <h2 class="merriweather-bold-italic-ashma-img">ASHMA MOTORS</h2>
+        <h5 class="noto-serif-todhri-regular">
+          Eco-Friendly Rides, Every time
+        </h5>
+      </div>
+      <div>
+        <img src="https://ashmamotors.com/images/bgoverlay1.png" alt="" class="ashmaMotorImg" />
+      </div>
+      <button type="button" class="btn-link">
+        <a href="">
+          contact with us <i class="fa-solid fa-circle-arrow-right"></i></a>
+      </button>
+    </div>
+    <!-- FINANCE SERVICE  -->
+    <div class="financeSection">
+        <h1 class="merriweather-bold">FINANCE &nbsp; PARTNERS</h1>
+        <div class="financeTitle">
+          <img src="./Images/finance.png" alt="img1">
+          <img class="financeImg2" src="./Images/finance2.png" alt="img1">
+      </div>
+    </div>
+    </div>
+    <!-- WHY EV VEHICLES --------------------------------------------------- -->
+    <div class="container main-container-ev">
+      <h1 class="merriweather-bold-italic-ev-vehicles">Why Electric Vehicle?</h1>
+      <div class="container main-ev-section">
+        <!-- 1ST CARD -- -->
+        <div class="main-ev-div">
+          <div class="main-ev-card" data-aos="zoom-in-right">
+            <!-- IMG  -->
+            <div class="main-ev-card-img">
+              <img src="https://ashmamotors.com/icons/nf.png" alt="1st-icons" />
+            </div>
+            <!-- TITLE  -->
+            <div class="main-ev-card-title">
+              <h4 class="noto-serif-todhri-regular">Noise Free</h4>
+            </div>
+          </div>
+        </div>
+        <!-- 2nd CARD -- -->
+        <div class="main-ev-div">
+          <div class="main-ev-card" data-aos="zoom-in-right">
+            <!-- IMG  -->
+            <div class="main-ev-card-img">
+              <img src="https://ashmamotors.com/icons/growth.png" alt="1st-icons" />
+            </div>
+            <!-- TITLE  -->
+            <div class="main-ev-card-title">
+              <h4 class="noto-serif-todhri-regular">Economical</h4>
+            </div>
+          </div>
+        </div>
+        <!-- 3rd CARD -- -->
+        <div class="main-ev-div">
+          <div class="main-ev-card" data-aos="zoom-in-right">
+            <!-- IMG  -->
+            <div class="main-ev-card-img">
+              <img src="https://ashmamotors.com/icons/envelope.png" alt="1st-icons" />
+            </div>
+            <!-- TITLE  -->
+            <div class="main-ev-card-title">
+              <h4 class="noto-serif-todhri-regular">Livelihood</h4>
+            </div>
+          </div>
+        </div>
+        <!-- 4th CARD -- -->
+        <div class="main-ev-div">
+          <div class="main-ev-card" data-aos="zoom-in-left">
+            <!-- IMG  -->
+            <div class="main-ev-card-img">
+              <img src="https://ashmamotors.com/icons/pf.png" alt="1st-icons" />
+            </div>
+            <!-- TITLE  -->
+            <div class="main-ev-card-title">
+              <h4 class="noto-serif-todhri-regular">Pollution Free</h4>
+            </div>
+          </div>
+        </div>
+        <!-- 5TH CARD -- -->
+        <div class="main-ev-div">
+          <div class="main-ev-card" data-aos="zoom-in-left">
+            <!-- IMG  -->
+            <div class="main-ev-card-img">
+              <img src="https://ashmamotors.com/icons/no-maintenance1.png" alt="1st-icons" />
+            </div>
+            <!-- TITLE  -->
+            <div class="main-ev-card-title">
+              <h4 class="noto-serif-todhri-regular">Easy Maintenance</h4>
+            </div>
+          </div>
+        </div>
+        <!-- 6TH CARD -- -->
+        <div class="main-ev-div">
+          <div class="main-ev-card" data-aos="zoom-in-left">
+            <!-- IMG  -->
+            <div class="main-ev-card-img">
+              <img src="https://ashmamotors.com/icons/nf.png" alt="1st-icons" />
+            </div>
+            <!-- TITLE  -->
+            <div class="main-ev-card-title">
+              <h4 class="noto-serif-todhri-regular">Fuel Free</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- CONTACT US ---------------------------------------------- -->
+    <div class="contact-main container">
+      <div class="contact-div " data-aos="zoom-in-right">
+        <h1 class="merriweather-regular">contact us</h1>
+        <!-- BUTTON  -->
+        <div>
+          <button type="button" class="btn-link btn-2" onclick="button1()">
+            <h6 class="contact-btn-2">head office</h6>
+          </button>
+          <button type="button" class="btn-link btn-2" onclick="button2()">
+            <h6 class="contact-btn-2"> manufacturing facility</h6>
+          </button>
+        </div>
+        <!-- HEADOFFICE MENU  -->
+        <div class="contact-info" id="headOffice">
+          <!-- LOCATION ---- -->
+          <div class="location-details">
+            <!-- address  -->
+            <div class="addressDetails">
+              <h4 class="noto-serif-todhri-regular">Address</h4>
+              <p>
+                327/3 G.T.Road, Baidyabati (Opp. of Axis Bank), Hooghly, West
+                Bengal,India-712222
+              </p>
+            </div>
+            <!-- contact  -->
+            <div class="contactDetails">
+              <h4 class="noto-serif-todhri-regular">Contact</h4>
+              <p>
+                <a href=""><i class="fa-solid fa-phone"></i> +91 9147318023
+                  (Helpdesk)</a>
+                <a href=""><i class="fa-solid fa-phone"></i> +91 8697185501
+                  (Director)</a>
+                <a href=""><i class="fa-solid fa-envelope"></i> enquiry@ashmamotors.com</a>
+              </p>
+            </div>
+          </div>
+          <!-- location  -->
+          <div class="loactionMap">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d7356.642355831526!2d88.327895!3d22.79056!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1737619977715!5m2!1sen!2sin"
+              width="600" height="450" style="border: 0" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+        <!-- MANUFACTURING MENU  -->
+        <div class="contact-info" id="manufacturingOffice">
+          <!-- LOCATION ---- -->
+          <div class="location-details">
+            <!-- address  -->
+            <div class="addressDetails">
+              <h4 class="noto-serif-todhri-regular">Address</h4>
+              <p>
+                Nemai Tirtha Rd, Baidyabati
+                Hooghly, West Bengal,India-712222
+              </p>
+            </div>
+            <!-- contact  -->
+            <div class="contactDetails">
+              <h4 class="noto-serif-todhri-regular">Contact</h4>
+              <p>
+                <a href=""><i class="fa-solid fa-phone"></i> +91 9147318023
+                  (Helpdesk)</a>
+                <a href=""><i class="fa-solid fa-phone"></i> +91 8697185501
+                  (Director)</a>
+                <a href=""><i class="fa-solid fa-envelope"></i> enquiry@ashmamotors.com</a>
+              </p>
+            </div>
+          </div>
+          <!-- location  -->
+          <div class="loactionMap">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14713.411379659748!2d88.319109!3d22.789386!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f88569948ad7cb%3A0xcb8e7a34e402c30a!2sASHMA%20MOTORS%20PRIVATE%20LIMITED!5e0!3m2!1sen!2sus!4v1737620214867!5m2!1sen!2sus"
+              width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
+      <!-- FORM  -->
+      <div class="formDiv">
+        <div class="form-container" data-aos="zoom-in-left">
+          <h1 class="merriweather-regular">Get in Touch by Call</h1>
+          <p class="merriweather-light">Great things in business are never done alone. Let’s connect and explore how we
+            can work together to
+            achieve your goals.</p>
+          <form>
+            <div class="mb-3">
+              <label for="name" class="form-label">Name*</label>
+              <input type="text" class="form-control" id="name" placeholder="Name" required>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="Email" required>
+            </div>
+            <div class="mb-3">
+              <label for="phone" class="form-label">Phone*</label>
+              <input type="tel" class="form-control" id="phone" placeholder="Phone" required>
+            </div>
+            <div class="mb-3">
+              <label for="inquiry" class="form-label">Inquiry Type*</label>
+              <input type="text" class="form-control" id="inquiry" placeholder="Inquiry Type" required>
+            </div>
+            <div class="mb-3">
+              <label for="state" class="form-label">Select State</label>
+              <select class="form-select" id="state">
+                <option selected disabled>Select State</option>
+                <option value="California">California</option>
+                <option value="Texas">Texas</option>
+                <option value="New York">New York</option>
+                <option value="Florida">Florida</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Your Message (Optional)</label>
+              <textarea class="form-control" id="message" rows="4" placeholder="Your Message"></textarea>
+            </div>
+            <button type="submit" class="btn-link w-100">
+              <a href="">submit</a>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- FOOTER  -->
+
+  <footer class="footer-main">
+    <div class="footer container">
+      <div class="footer-column">
+        <h3 class="noto-serif-todhri-regular">Dealership</h3>
+        <a href="#">Become a Dealer</a>
+        <a href="#">Contact Us</a>
+      </div>
+      <div class="footer-column">
+        <h3 class="noto-serif-todhri-regular">Ashma Products</h3>
+        <a href="#">E-rickshaw</a>
+        <a href="#">E-Loader</a>
+      </div>
+      <div class="footer-column">
+        <h3 class="noto-serif-todhri-regular">Help</h3>
+        <a href="#">FAQs</a>
+        <a href="#">Privacy Policy</a>
+      </div>
+      <div class="footer-column">
+        <h3 class="noto-serif-todhri-regular">Follow Us</h3>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-x"></i></a>
+          <a href="#"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+    </div>
+    <!-- <div style="color: white;" class="footer-text">
+      <div class="footer-border"></div>
+      <div class="footerlogo">
+        <img src="https://ashmamotors.com/images/footer-logo.png" alt="footer-logo">
+      </div>
+    </div> -->
+    <!-- FOOTER bg  -->
+    <div class="footer_bg">
+      <div class="footer_bg_one"></div>
+      <div class="footer_bg_two"></div>
+    </div>
+  </footer>
+  <!-- <div class="footer_bg">
+    <div class="footer_bg_one"></div>
+    <div class="footer_bg_two"></div>
+  </div> -->
+</body>
+<!-- BOOTSTRAP JS  -->
+<script src="./script.js"></script>
+<!-- AOS  -------------------------------------->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+<script>
+  AOS.init();
+  const swiperEl = document.querySelector('swiper-container')
+  Object.assign(swiperEl, {
+    slidesPerView: 1,
+    spaceBetween: 10,
+    pagination: {
+      clickable: true,
+    },
+    breakpoints: {
+      "@0.00": {
+        slidesPerView: 1,
+        spaceBetween: 10,
+      },
+      "@0.75": {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      "@1.00": {
+        slidesPerView: 3,
+        spaceBetween: 40,
+      },
+      "@1.50": {
+        slidesPerView: 4,
+        spaceBetween: 50,
+      },
+    },
+  });
+
+  swiperEl.initialize();
+</script>
+
+</html>

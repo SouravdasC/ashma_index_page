@@ -1,0 +1,116 @@
+ position: absolute;
+  top: 0;
+  left: 0;
+  /* padding-bottom: 0.5rem; */
+  background: url("https://ashmamotors.com/icons/bg12.jpg");
+  /* background-position: center; */
+  /* box-shadow: 5px -2px 24px #888888; */
+  padding: 3.5rem;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #f9f9f9;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  border-bottom: 4px solid red;
+  background-color: rgb(207, 204, 204);
+
+  <button type="button" class="btn-link">
+              <a href=""> know more </a>
+            </button>
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d7356.642355831526!2d88.327895!3d22.79056!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1737619977715!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+            transform: rotateX(10deg) rotateY(-10deg) scale(1.05); /* Tilts and slightly enlarges */
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3); /* Enhances shadow for depth */
+
+
+
+
+  NAVBAR HEADING ------------------------------------------------------------------------------
+
+  #navMenu {
+    display: none;
+  }
+
+  /* MENU  */
+  .menuBar-icons {
+    display: block;
+  }
+
+  #navMenu-responsive {
+    width: 100%;
+    position: absolute;
+    top: 3.2rem;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    gap: 1.5rem;
+    background: var(--backgroundColor);
+    padding: 1rem 1.5rem;
+    transition: all 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    border-radius: 10px 10px;
+  }
+
+  .menubar {
+    flex-direction: column;
+    align-items: normal;
+    gap: 1.2rem;
+    padding-left: 0;
+    list-style-type: disc;
+    margin-bottom: 1.5rem;
+  }
+
+  .menu-items::marker {
+    /* color: pink; */
+    color: green;
+  }
+
+  .menu-link {
+    font-size: 14px;
+    display: flex;
+    align-items: flex-start;
+    gap: 0.2rem;
+    background: var(--backgroundColor);
+    border: none;
+  }
+
+  .menu-link i {
+    font-size: 20px;
+    /* margin-top: -0.2rem; */
+    padding: 1.2px 0;
+  }
+
+  .resSubmenu {
+    padding-left: 0rem;
+    background-color: black;
+    padding: 0.4rem 1rem;
+    width: 100%;
+    margin-top: 0.5rem;
+    /* display: block; */
+    transform: scaleY(1);
+    list-style-type: none;
+    border-radius: 10px;
+  }
+
+  .resSubmenu li a {
+    text-decoration: none;
+    text-transform: capitalize;
+    color: rgb(211, 207, 207);
+    font-size: 13px;
+  }
+
+  .resSubmenu li a:hover {
+    text-decoration: underline;
+    transition: all 0.2s linear;
+  }
+
+  /* SOCIAL ICONS  */
+  .social-iocns {
+    color: white;
+    gap: 2rem;
+    justify-content: center;
+  }
+
+  NAVBAR END ===================================================================================
